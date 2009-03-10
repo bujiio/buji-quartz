@@ -21,4 +21,4 @@
  * components that help <tt>SessionManager</tt> implementations maintain sessions (timed expiration, orphan cleanup,
  * etc).
  */
-package org.jsecurity.session.mgt.quartz;
+package org.ki.session.mgt.quartz;
