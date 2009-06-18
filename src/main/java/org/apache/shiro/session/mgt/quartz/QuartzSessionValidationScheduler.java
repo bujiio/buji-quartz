@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.ki.session.mgt.quartz;
+package org.apache.shiro.session.mgt.quartz;
 
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
@@ -27,14 +27,14 @@ import org.quartz.impl.StdSchedulerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.ki.session.mgt.DefaultSessionManager;
-import org.apache.ki.session.mgt.SessionValidationScheduler;
-import org.apache.ki.session.mgt.ValidatingSessionManager;
+import org.apache.shiro.session.mgt.DefaultSessionManager;
+import org.apache.shiro.session.mgt.SessionValidationScheduler;
+import org.apache.shiro.session.mgt.ValidatingSessionManager;
 
 
 /**
- * An implementation of the {@link org.apache.ki.session.mgt.SessionValidationScheduler SessionValidationScheduler} that uses Quartz to schedule a
- * job to call {@link org.apache.ki.session.mgt.ValidatingSessionManager#validateSessions()} on
+ * An implementation of the {@link org.apache.shiro.session.mgt.SessionValidationScheduler SessionValidationScheduler} that uses Quartz to schedule a
+ * job to call {@link org.apache.shiro.session.mgt.ValidatingSessionManager#validateSessions()} on
  * a regular basis.
  *
  * @author Jeremy Haile
@@ -129,7 +129,7 @@ public class QuartzSessionValidationScheduler implements SessionValidationSchedu
 
     /**
      * Specifies how frequently (in milliseconds) this Scheduler will call the
-     * {@link org.apache.ki.session.mgt.ValidatingSessionManager#validateSessions() ValidatingSessionManager#validateSessions()} method.
+     * {@link org.apache.shiro.session.mgt.ValidatingSessionManager#validateSessions() ValidatingSessionManager#validateSessions()} method.
      *
      * <p>Unless this method is called, the default value is {@link #DEFAULT_SESSION_VALIDATION_INTERVAL}.
      *

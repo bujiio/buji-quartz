@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.ki.session.mgt.quartz;
+package org.apache.shiro.session.mgt.quartz;
 
 import org.quartz.Job;
 import org.quartz.JobDataMap;
@@ -26,10 +26,10 @@ import org.quartz.JobExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.ki.session.mgt.ValidatingSessionManager;
+import org.apache.shiro.session.mgt.ValidatingSessionManager;
 
 /**
- * A quartz job that basically just calls the {@link org.apache.ki.session.mgt.ValidatingSessionManager#validateSessions()}
+ * A quartz job that basically just calls the {@link org.apache.shiro.session.mgt.ValidatingSessionManager#validateSessions()}
  * method on a configured session manager.  The session manager will automatically be injected by the
  * superclass if it is in the job data map or the scheduler map.
  *
